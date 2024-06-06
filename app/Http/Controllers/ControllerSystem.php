@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class ControllerSystem extends Controller
 {
     public function index () {
-        return "Дверные ручки для дверей!";
+        $res = "Дверные ручки для дверей ";
+        for ($i=0; $i < 20000; $i++) {
+            $res = $res . "Дверные ручки для дверей ";
+        }
+        return $res;
     }
 }

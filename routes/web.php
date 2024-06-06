@@ -14,3 +14,4 @@ Route::get('/door_handles', [ControllerSafeSystems::class, 'index']);
 Route::get('/one', [ControllerOne::class, 'index']);
 
 Route::get('/get_system', [ControllerSystem::class, 'index']);
+
