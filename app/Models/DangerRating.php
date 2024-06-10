@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class DangerRating extends Model
 {
     use HasFactory;
+    protected $table = 'danger_ratings';
 }
