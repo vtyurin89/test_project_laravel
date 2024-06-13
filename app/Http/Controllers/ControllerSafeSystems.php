@@ -9,7 +9,7 @@ use App\Models\Stargate;
 class ControllerSafeSystems extends Controller
 {
     public function index() {
-        $sttr = Stargate::all();
+        $sttr = Stargate::where("x", "1")->first();
         dd($sttr);
     }
 }
