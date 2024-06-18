@@ -9,8 +9,8 @@ use App\Models\System;
 class ControllerSystem extends Controller
 {
     public function index () {
-        $system = System::find(1);
-        dd($system);
+        $systems = System::all();
+        return view('index', compact('systems'));
     }
 
     public function update () {
